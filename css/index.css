@@ -1,0 +1,105 @@
+body{
+    background-color: #BBE1FA;
+    color: #272343;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.intro-Body{
+    padding-bottom: 0.625rem;
+}
+
+.main-Body{
+    background-color: #f8f9fa;
+    text-align: center;
+    padding-bottom: 6.25rem;
+}
+
+
+.navbar-brand{
+    color: #2d3092 !important;
+    padding: 5px 15px;
+    font-family: 'Cairo', sans-serif !important;
+    font-size: 2rem;
+    font-weight:600;
+}
+
+.collapse{
+    position: absolute;
+    right: 30px;
+}
+
+.nav-link{
+    color: #2d3092 !important;
+}
+
+.nav-link:hover{
+    color: #4D80E4 !important;
+}
+
+.option{
+    padding: 7px 10px;
+}
+
+.login{
+    background-color: white;
+    color: #2d3092;
+}
+
+.login:hover{
+    background-color: #3E64FF;
+    color: white;
+}
+
+.blurb{
+    padding: 8.125rem 0;
+
+}
+
+.register-btn{
+    background-color: #2d3092;
+    font-size: 1rem;
+    color: white;
+}
+
+.register-btn:hover{
+    background-color: #3E64FF;
+    color: white;
+}
+
+.blurb-header{
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-top: 3.125rem;
+}
+
+.blurb-text{
+    font-size: 1rem;
+}
+
+.cImage{
+    padding-left: 3.75rem;
+    width: 100%;
+}
+
+.course-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-img{
+    width: 25%;
+    margin: 0 auto;
+    padding: 1.875rem 0;
+}
+
+.courses-header{
+    padding: 6.25rem 0;
+
+}
+
+#footer{
+    background-color: #465a6e;
+    color: #ffffffb3;
+    text-align: center;
+    padding:1.5rem 0;
+}
