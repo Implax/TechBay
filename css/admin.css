@@ -11,3 +11,39 @@ body{
     font-size: 1.5rem;
     font-weight:600;
 }
+
+h2, h3{
+    text-align: center;
+}
+
+h2{
+    font-weight: 600;
+    padding-top: 2.5rem;
+}
+
+h3{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.container{
+    width: 70%;
+}
+
+img{
+    object-fit:contain;
+    width: 100%;
+}
+
+form{
+    margin: auto 0 !important;
+    padding-top: 3rem;
+}
+
+.form{
+    background-color: white;
+}
+
+.details{
+    border-left: 0.25px solid black;
+}

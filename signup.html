@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Admin Login</title>
 
      <!-- Google Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 
     <!-- CSS and Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/signup.css">
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/889698bae7.js" crossorigin="anonymous"></script>
@@ -23,45 +23,55 @@
     <div class="container-fluid"></div>
     <nav class="navbar navbar-expand-lg navbar-dark">
     
-        <a class="navbar-brand" href="#">TechBay</a>
+        <a class="navbar-brand" href="index.html">TechBay</a>
+    </nav>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <h2>Welcome to TechBay!</h2>
+    <h3>Create An Account With Us To Access The Best Courses Available</h3>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="resources navbar-nav m1-auto">
-                <li class="nav-item option">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item option">
-                    <a class="nav-link" href="#">Courses</a>
-                </li>
-                <li class="nav-item option">
-                    <a class="nav-link" href="admin.html">Admin</a>
-                </li>
-                <li class="nav-item name">
-                    <a class="nav-link" href="">Richard C.</a>
-                </li>
-                <li class="nav-item">
-                    <img src="images/man.png" class="my-profile rounded-circle" width="32" alt="my-icon">
-                </li>
-            </ul>
+    <div class="container">
+        <div class="row">
+            <div class="form col-lg-6 col-sm-12">
+                <img src="images/progressive.png" alt="admin">
+            </div>
+            <div class="form details col-lg-6 col-sm-12">
+                <form class="row g-3" action="" method="POST">
+                    <div class="col-12">
+                        <label for="studentName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="studentName">
+                    </div>
+                    <div class="col-12">
+                        <label for="studentEmail" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="studentEmail">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label" for="inputGroupSelect01">Gender</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="3">Other</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <label for="studentCountry" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="studentCountry">
+                    </div>
+                    <div class="col-12">
+                        <label for="studentPassword" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="studentPassword">
+                    </div>
+                    <div class="col-12">
+                        <label for="studentPassword" class="form-label">Re-Enter Password</label>
+                        <input type="text" class="form-control" id="studentPassword">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Create An Account</button>
+                    </div>
+                    <p class="login_text">Already have an account? <a href="login.html">Sign In</a></p>
+                </form>
+            </div>
         </div>
-    </nav>  
     </div>
-
-    <div class="sidebar sidebar-light sidebar-left sidebar-p-t" data-perfect-scrollbar>
-        
-    </div>
-    
-
-
-
-
-
-
-
 
 </body>
 </html>
