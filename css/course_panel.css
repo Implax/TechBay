@@ -60,50 +60,7 @@ main {
   height: 91.5vh;
 }
 
-/* Actual Content */
-.container{
-  margin-top: 3rem;
-}
-
-.row{
-  color: white;
-}
-
-.card{
-  margin: 0 auto;
-}
-
-.icons{
-  width: 25%;
-  float:left;
-  padding-top: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.head{
-  font-weight: 400;
-  padding-top: 1rem;
-}
-
-.figure{
-  font-size: 1.5rem;
-}
-
-.card-header{
-  padding: 1rem 0;
-  padding-left: 1rem;
-}
-
-.s_courses{
-  padding: 2rem 0;
-}
-
-.my_courses{
-  width: 10%;
-  margin-left: 1rem;
-}
-
-.description{
-  display:inline-block;
-  padding-left: 1rem;
+.course-button{
+    display: flex;
+    justify-content: end;
 }
