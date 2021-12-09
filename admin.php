@@ -35,14 +35,14 @@
                 <img src="images/admin.png" alt="admin">
             </div>
             <div class="form details col-lg-6 col-sm-12">
-                <form class="row g-3" action="" method="POST">
+                <form class="row g-3" method="POST" action="controller/adminlogin.php">
                     <div class="col-12">
                         <label for="adminEmail" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="adminEmail">
+                        <input type="text" name="aEmail" class="form-control" id="adminEmail">
                     </div>
                     <div class="col-12">
                         <label for="adminPassword" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="adminPassword">
+                        <input type="password" name="aPassword" class="form-control" id="adminPassword">
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Sign in</button>

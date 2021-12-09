@@ -13,14 +13,14 @@ class Techbay extends db_connection{
     }
 
     public function student_login($s_email, $s_password){
-        $sql = "SELECT Student_ID FROM Student WHERE Email = '$s_email' and S_password = '$s_password' ";
+        $sql = "SELECT StudentID FROM Student WHERE Email = '$s_email' and S_password = '$s_password' ";
          
         return $this->db_query($sql);
     }
 
     
     public function admin_login($a_email, $a_password){
-        $sql = "SELECT Admin_ID FROM Admin_Details WHERE Admin_Email = '$a_email' and Admin_password = '$a_password' ";
+        $sql = "SELECT AdminID FROM Admin_Details WHERE Admin_Email = '$a_email' and Admin_password = '$a_password' ";
          
         return $this->db_query($sql);
     }

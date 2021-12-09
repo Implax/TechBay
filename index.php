@@ -59,7 +59,7 @@
                    <a href="signup.php"> <button type="button" class="btn btn-lg register-btn">Get Started</button></a>
                 </div>
                 <div class="blurb col-lg-6 col-md-12">
-                    <img class="cImage" src="images/laptop.png" alt="tech-image">
+                    <img class="cImage" src="images/blackman.png" alt="tech-image">
                 </div>
             </div>
         </div>

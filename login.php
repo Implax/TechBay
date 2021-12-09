@@ -34,14 +34,14 @@
                 <img src="images/student.png" alt="student">
             </div>
             <div class="form details col-lg-6 col-sm-12">
-                <form class="row g-3" action="" method="POST">
+                <form class="row g-3" action="controller/studentlogin.php" method="POST">
                     <div class="col-12">
                         <label for="studentEmail" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="studentEmail">
+                        <input type="text" name="sEmail" class="form-control" id="studentEmail">
                     </div>
                     <div class="col-12">
                         <label for="studentPassword" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="studentPassword">
+                        <input type="password" name="sPassword" class="form-control" id="studentPassword">
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Sign in</button>
