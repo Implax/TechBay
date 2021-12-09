@@ -23,7 +23,7 @@
     <div class="container-fluid"></div>
     <nav class="navbar navbar-expand-lg navbar-dark">
     
-        <a class="navbar-brand" href="index.html">TechBay</a>
+        <a class="navbar-brand" href="index.php">TechBay</a>
     </nav>
 
     <h2>Welcome to the Admin Panel</h2>

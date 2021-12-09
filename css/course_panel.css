@@ -64,3 +64,13 @@ main {
     display: flex;
     justify-content: end;
 }
+
+.courses-btn{
+    margin-top: 3rem;
+    margin-right: 8rem;
+}
+
+table{
+    width: 70% !important;
+    margin: 0 auto !important;
+}

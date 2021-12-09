@@ -14,7 +14,7 @@
     <!-- CSS and Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <link rel="stylesheet" href="css/course_panel.css">
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/889698bae7.js" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
     <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark">
     
-        <a class="navbar-brand" href="index.html">TechBay</a>
+        <a class="navbar-brand" href="index.php">TechBay</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="resources navbar-nav m1-auto">
                 <li class="nav-item option">
-                    <a class="nav-link" style="color: #2d3092;" href="index.html">Home</a>
+                    <a class="nav-link" style="color: #2d3092;" href="index.php">Home</a>
                 </li>
                 <li class="nav-item name">
                     <a class="nav-link" style="color: #2d3092;" href="">Richard C.</a>
@@ -73,99 +73,57 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="admin_dashboard.html" class="nav-link active" aria-current="page">
+                <a href="admin_dashboard.php" class="nav-link link-dark">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                   Dashboard
                 </a>
               </li>
               <li>
-                <a href="course_panel.html" class="nav-link link-dark">
+                <a href="course_panel.php" class="nav-link active" aria-current="page">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#courses"/></svg>
                   Courses
                 </a>
               </li>
               <li>
-                <a href="student_panel.html" class="nav-link link-dark">
+                <a href="student_panel.php" class="nav-link link-dark">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
                   Students
                 </a>
               </li>
               <li>
-                <a href="instructor_panel.html" class="nav-link link-dark">
+                <a href="instructor_panel.php" class="nav-link link-dark">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#instructor"/></svg>
                   Instructors
                 </a>
               </li>
             </ul>
             <hr>
-                <a href="index.html" class="nav-link link-dark">
+                <a href="index.php" class="nav-link link-dark">
                   Sign Out
                 </a>
           </div>
 
-          <div class="container">
-            <div class="row">
-
-              <div class="col-lg-4 col-sm-12">
-                <div class="card" style="width: 18rem; background-color: #1367c8;">
-                  <div class="card-body">
-                    <img class="icons" src="images/student_icon.png" alt="student">
-                    <p class="head">TOTAL STUDENTS</p>
-                    <p class="figure">12</p>
-                  </div>
-                </div>
-              </div>
-
-                <div class="col-lg-4 col-sm-12">
-                  <div class="card" style="width: 18rem; background-color: #ffaa16;">
-                    <div class="card-body">
-                      <img class="icons" src="images/instructor.png" alt="instructor">
-                      <p class="head">TOTAL INSTRUCTORS</p>
-                      <p class="figure">12</p>
-                    </div>
-                  </div>
-                </div>
-
-              <div class="col-lg-4 col-sm-12">
-                <div class="card" style="width: 18rem; background-color: #ff1616;">
-                  <div class="card-body">
-                    <img class="icons" src="images/course.png" alt="courses">
-                    <p class="head">TOTAL COURSES</p>
-                    <p class="figure">5</p>
-                  </div>
-                </div>
-              </div>
-        
-            </div>
+          <div class="course-button">
+            <button type="button" class="courses-btn btn btn-secondary btn-lg">Add New Course</button>
           </div>
 
-          <div class="container">
-            <div class="col-lg-12">
-              <div class="card f_courses" style="width: 30rem;">
-                <div class="card-header">
-                  Featured Courses
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item s_courses">
-                    <img class="my_courses" src="images/industrial-robot.png" alt="robots">
-                    <p class="description">Robotics</p>
-                  </li>
-                  <li class="list-group-item s_courses">
-                    <img class="my_courses" src="images/game-development.png" alt="robots">
-                    <p class="description">Game Development</p>
-                  </li>
-                  <li class="list-group-item s_courses">
-                    <img class="my_courses" src="images/cryptography.png" alt="robots">
-                    <p class="description">Cryptography</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <br><br>
+>
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Program</th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+              </table>    
     </main>
-
-    <!-- Main Content -->
-    
 
 </body>
 </html>

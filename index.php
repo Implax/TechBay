@@ -35,16 +35,10 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item option">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item option">
-                        <a class="nav-link" href="#">Courses</a>
-                    </li>
-                    <li class="nav-item option">
-                        <a class="nav-link" href="admin.html">Admin</a>
+                        <a class="nav-link" href="admin.php">Admin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">
+                        <a class="nav-link" href="login.php">
                             <button type="button" class="btn login">Login</button>
                         </a>
                     </li>
@@ -62,7 +56,7 @@
                     <br>
                     <p class="blurb-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis pellentesque libero. Nulla non volutpat libero. Suspendisse ultricies odio ac dui imperdiet dictum. Nulla facilisi. Proin porttitor, magna sed facilisis.</p>
                     <br>
-                   <a href="signup.html"> <button type="button" class="btn btn-lg register-btn">Get Started</button></a>
+                   <a href="signup.php"> <button type="button" class="btn btn-lg register-btn">Get Started</button></a>
                 </div>
                 <div class="blurb col-lg-6 col-md-12">
                     <img class="cImage" src="images/laptop.png" alt="tech-image">
@@ -88,7 +82,7 @@
                         <h5 class="card-title">Pattern Recognition</h5>
                         <p class="card-text">Artificial Intelligence</p>
                         <p>2 Months <br> GHS 95.50</p>
-                        <a href="signup.html" class="btn btn-primary">Register Now!</a>
+                        <a href="signup.php" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
 
@@ -98,7 +92,7 @@
                         <h5 class="card-title">Robotics</h5>
                         <p class="card-text">Artificial Intelligence</p>
                         <p>2 Months <br> GHS 85.00</p>
-                        <a href="#" class="btn btn-primary">Register Now!</a>
+                        <a href="signup.php" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
 
@@ -108,7 +102,7 @@
                         <h5 class="card-title">Introduction to Unity</h5>
                         <p class="card-text">Game Development</p>
                         <p>3 Months <br> GHS 120.00</p>
-                        <a href="#" class="btn btn-primary">Register Now!</a>
+                        <a href="signup.php" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
 
@@ -118,7 +112,7 @@
                         <h5 class="card-title">Cryptography</h5>
                         <p class="card-text">Theory of Computation</p>
                         <p>1 Month <br> GHS 65.00</p>
-                        <a href="#" class="btn btn-primary">Register Now!</a>
+                        <a href="signup.php" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
 
@@ -128,7 +122,7 @@
                         <h5 class="card-title">Ethical Hacking</h5>
                         <p class="card-text">Cyber Security</p>
                         <p>3 Months <br> GHS 135.00</p>
-                        <a href="#" class="btn btn-primary">Register Now!</a>
+                        <a href="signup.php" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>

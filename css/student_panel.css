@@ -59,3 +59,9 @@ main {
   float: left !important;
   height: 91.5vh;
 }
+
+table{
+    width: 70% !important;
+    margin: 0 auto !important;
+    margin-top: 3rem !important;
+}

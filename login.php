@@ -23,7 +23,7 @@
     <div class="container-fluid"></div>
     <nav class="navbar navbar-expand-lg navbar-dark">
     
-        <a class="navbar-brand" href="index.html">TechBay</a>
+        <a class="navbar-brand" href="index.php">TechBay</a>
     </nav>
 
     <h3>Kindly Login Below To Be Redirected To The Student Dashboard</h3>

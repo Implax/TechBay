@@ -1,3 +1,9 @@
+<?php
+// start session so that errors can be available in this file to print
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +29,19 @@
     <div class="container-fluid"></div>
     <nav class="navbar navbar-expand-lg navbar-dark">
     
-        <a class="navbar-brand" href="index.html">TechBay</a>
+        <a class="navbar-brand" href="index.php">TechBay</a>
     </nav>
 
     <h2>Welcome to TechBay!</h2>
     <h3>Create An Account With Us To Access The Best Courses Available</h3>
+
+    <?php
+            if(isset($_SESSION["errors"])){
+                $errors = $_SESSION["errors"];
+            }
+            // destroy session after displaying errors
+            session_destroy();
+    ?>
 
     <div class="container">
         <div class="row">
@@ -35,18 +49,20 @@
                 <img src="images/progressive.png" alt="admin">
             </div>
             <div class="form details col-lg-6 col-sm-12">
-                <form class="row g-3" action="" method="POST">
+                <form class="row g-3" action="controller/studentregister.php" method="POST" enctype="multitype/form-data">
                     <div class="col-12">
                         <label for="studentName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="studentName">
+                        <input type="text" class="form-control" name="studentName" required="">
+                        <small class="text-danger"><?php if (isset($errors[0])) echo $errors[0]; ?></small> 
                     </div>
                     <div class="col-12">
                         <label for="studentEmail" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="studentEmail">
+                        <input type="text" class="form-control" name="studentEmail" required="">
+                        <small class="text-danger"><?php if (isset($errors[1])) echo $errors[1]; ?></small> 
                     </div>
                     <div class="col-6">
                         <label class="form-label" for="inputGroupSelect01">Gender</label>
-                        <select class="form-select" id="inputGroupSelect01">
+                        <select class="form-select" name="inputGroupSelect01">
                           <option value="1">Male</option>
                           <option value="2">Female</option>
                           <option value="3">Other</option>
@@ -54,20 +70,22 @@
                       </div>
                       <div class="col-6">
                         <label for="studentCountry" class="form-label">Country</label>
-                        <input type="text" class="form-control" id="studentCountry">
+                        <input type="text" class="form-control" name="studentCountry" required="">
                     </div>
                     <div class="col-12">
                         <label for="studentPassword" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="studentPassword">
+                        <input type="password" class="form-control" name="studentPassword" required="">
+                        <small class="text-danger"><?php if (isset($errors[2])) echo $errors[2]; ?></small>
                     </div>
                     <div class="col-12">
                         <label for="studentPassword" class="form-label">Re-Enter Password</label>
-                        <input type="text" class="form-control" id="studentPassword">
+                        <input type="password" class="form-control" name="studentcPassword" required="">
+                        <small class="text-danger"><?php if (isset($errors[2])) echo $errors[3]; ?></small>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Create An Account</button>
+                        <button type="submit" class="btn btn-primary" name="submitBtn">Create An Account</button>
                     </div>
-                    <p class="login_text">Already have an account? <a href="login.html">Sign In</a></p>
+                    <p class="login_text">Already have an account? <a href="login.php">Sign In</a></p>
                 </form>
             </div>
         </div>
