@@ -21,7 +21,66 @@
 </head>
 
 <body>
+    <div class="container-fluid"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        
+            <a class="navbar-brand" href="index.php">TechBay</a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="resources navbar-nav m1-auto">
+                    <li class="nav-item option">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item option">
+                        <a class="nav-link" href="admin.php">Admin</a>
+                    </li>
+                    <li class="nav-item option">
+                    <a class="nav-link" href="login.php">Sign Out</a>
+                    </li>
+                </ul>
+                
+            </div>
+      </nav>  
+    </div>
+
+    <div class="student-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="blurb">
+                        <h3>Welcome to Your Student Dashboard</h3>
+                        <p class="intro">Hand-picked Instructors and expertly crafted courses, designed just for you.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="learn" src="images/learning.png" alt="learn">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p class="recommend">Start Off With A Personal Curated Course Handpicked For You</p>
+            </div>
+            <div class="col-6">
+            <div class="card" style="width: 18rem;">
+                <img src="images/unity-web.jpg" class="card-img-top" alt="unity">
+                <div class="card-body">
+                    <h5 class="card-title">Introduction to Unity</h5>
+                    <p class="card-text">Game Development</p>
+                    <a href="#" class="btn btn-primary">Start Now</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
