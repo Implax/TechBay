@@ -11,12 +11,12 @@ $createCourse = addCourse($coursename, $courseprogram, $courseduration, $coursep
 if($createCourse){
     echo "<script language='javascript'>;
            alert('Course Successfully Created');
-          window.location.href='../view/project.php';
+          window.location.href='../course_panel.php';
           </script>";
     } else{
           echo "<script>;
           alert('Course Could Not Be Created. Try Again');
-          window.location.href='../view/project.php';
+          window.location.href='../course_panel.php';
           </script>";
     }
 ?>
