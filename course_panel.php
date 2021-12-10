@@ -11,11 +11,9 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Cairo&family=DM+Sans&display=swap" rel="stylesheet">
 
-    <!-- CSS and Bootsrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+    <!-- CSS and Bootsrap -->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">     
     <link rel="stylesheet" href="css/course_panel.css">
-    
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/889698bae7.js" crossorigin="anonymous"></script>
 </head>
@@ -104,7 +102,7 @@
           </div>
 
           <div class="course-button">
-            <button type="button" class="courses-btn btn btn-secondary btn-lg">Add New Course</button>
+          <a href="coursecreate.php"><button type="button" class="courses-btn btn btn-secondary btn-lg">Add New Course</button></a>
           </div>
 
         <br><br>
@@ -124,15 +122,14 @@
                   <?php
                     require_once (dirname(__FILE__)).'../controller/controller.php';
                     // start a session
-                    session_start();
                     $courses = getCourses();
 
                     foreach($courses as $key => $value){
                   ?>
                          <?= "<tr> <th>" . $value['CourseID'] . "</th> <td>" . $value['Name'] ."</td> <td>". $value['Program'] . "</td> <td>" . $value['Duration'] . "</td> <td>" . $value['Price'] . "</td>" ?>  
                           <td>
-                            <a href="course_delete.php?id=<?= $value['CourseID'] ?>" class="btn btn-danger btn-custom"> Delete</a> 
-                            <a href="course_update.php?id=<?php $_SESSION['upId']= $value['CourseID'] ?>" class="btn btn-light btn-custom"> Update</a> 
+                            <a href="controller/coursedelete.php?id=<?= $value['CourseID'] ?>" class="btn btn-danger btn-custom"> Delete</a> 
+                            <a href="courseupdate.php?id=<?= $value['CourseID'] ?>" class="btn btn-light btn-custom"> Update</a> 
                           </td>
               <?php
                   }
@@ -140,6 +137,7 @@
                   </tbody>
               </table>    
     </main>
-
 </body>
 </html>
+
+

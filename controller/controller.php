@@ -52,7 +52,11 @@ require_once (dirname(__FILE__)).'/../model/techbay_class.php';
         $runQuery = $count->countStudent();
 
         if($runQuery){
-            return $runQuery;
+            $students = array();
+            while($record = $count->db_fetch()){
+                $students[] = $record;
+            }
+            return $students[0];
         }else{
             return false;
         }
@@ -64,7 +68,11 @@ require_once (dirname(__FILE__)).'/../model/techbay_class.php';
         $runQuery = $count->countInstructor();
 
         if($runQuery){
-            return $runQuery;
+            $instructors = array();
+            while($record = $count->db_fetch()){
+                $instructors[] = $record;
+            }
+            return $instructors[0];
         }else{
             return false;
         }        
@@ -76,10 +84,14 @@ require_once (dirname(__FILE__)).'/../model/techbay_class.php';
         $runQuery = $count->countCourses();
 
         if($runQuery){
-            return $runQuery;
+            $courses = array();
+            while($record = $count->db_fetch()){
+                $courses[] = $record;
+            }
+            return $courses[0];
         }else{
             return false;
-        }        
+        }            
     }
 
     function getCourses(){
@@ -128,6 +140,59 @@ require_once (dirname(__FILE__)).'/../model/techbay_class.php';
                     $students[] = $record;
                 }
                 return $students;
+            }else{
+                return false;
+            }
+        }
+
+        function addCourse($name, $program, $duration, $price){
+            $course = new Techbay;
+
+            $runQuery = $course->createCourse($name, $program, $duration, $price);
+
+            if($runQuery){
+                return $runQuery;
+            }else{
+                return false;
+            }
+        }
+
+        function deleteCourse($id){
+            $course = new Techbay;
+
+            $runQuery = $course->delete($id,"CourseID","Course");
+
+            if($runQuery){
+                return $runQuery;
+            }else{
+                return false;
+            }
+        }
+
+        function updateCourse($id, $courseName,$courseProgram,$courseDuration,$coursePrice){
+            $course = new Techbay;
+
+            $runQuery = $course->editCourse($id, $courseName,$courseProgram,$courseDuration,$coursePrice);
+
+            if($runQuery){
+                return $runQuery;
+            }else{
+                return false;
+            }
+        }
+
+        function showCourses($id){
+            $course = new Techbay;
+        
+            // Run query
+            $runQuery = $course->showCourse($id);
+        
+            if($runQuery){
+                $courses = array();
+                while($record = $course->db_fetch()){
+                    $courses[] = $record;
+                }
+                return $courses;
             }else{
                 return false;
             }

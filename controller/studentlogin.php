@@ -5,7 +5,8 @@ require_once (dirname(__FILE__)).'/../controller/controller.php';
     $studentEmail = $_POST['sEmail'];
     $studentPassword = $_POST['sPassword'];
 
-    $login = login_student($studentEmail, $studentPassword);
+    $password = md5($studentPassword);  
+    $login = login_student($studentEmail, $password);
 
     if($login){
         echo "<script language='javascript'>;
@@ -18,8 +19,6 @@ require_once (dirname(__FILE__)).'/../controller/controller.php';
         window.location.href='../login.php';
         </script>";
   }
-
-
 ?>
 
 

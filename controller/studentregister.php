@@ -33,7 +33,10 @@ if (isset($_POST['submitBtn'])) {
             echo "failed";
         }else{
             // redirect
-            echo "<script>alert('Successfully Created New Account');</script>";
+            echo "<script language='javascript'>;
+                alert('Successfully Created New Account!');
+                window.location.href='../index.php';
+                </script>";
         }
 
     }else{

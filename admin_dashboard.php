@@ -115,10 +115,11 @@
                       <?php
                         require_once (dirname(__FILE__)).'../controller/controller.php';
 
-                        // $sum = s_Count();
-                        // echo "$sum";
-
-                        echo s_Count();
+                        $count = s_Count();
+                        foreach ($count as $value) {
+                          echo $value;
+                        }
+                        
                       ?>
                     </p>
                   </div>
@@ -130,7 +131,16 @@
                     <div class="card-body">
                       <img class="icons" src="images/instructor.png" alt="instructor">
                       <p class="head">TOTAL INSTRUCTORS</p>
-                      <p class="figure">12</p>
+                      <p class="figure">
+                      <?php
+                        require_once (dirname(__FILE__)).'../controller/controller.php';
+
+                        $count = i_Count();
+                        foreach ($count as $value) {
+                          echo $value;
+                        }
+                      ?>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -140,7 +150,16 @@
                   <div class="card-body">
                     <img class="icons" src="images/course.png" alt="courses">
                     <p class="head">TOTAL COURSES</p>
-                    <p class="figure">5</p>
+                    <p class="figure">
+                    <?php
+                        require_once (dirname(__FILE__)).'../controller/controller.php';
+
+                        $count = c_Count();
+                        foreach ($count as $value) {
+                          echo $value;
+                        }
+                      ?>
+                    </p>
                   </div>
                 </div>
               </div>

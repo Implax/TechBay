@@ -27,6 +27,7 @@ class Techbay extends db_connection{
 
     //Count Functions
     public function countStudent(){
+        // $sql = "SELECT COUNT(StudentID) FROM Student";
         $sql = "SELECT COUNT(StudentID) FROM Student";
 
         return $this->db_query($sql);
@@ -73,7 +74,7 @@ class Techbay extends db_connection{
     }
 
     public function editCourse($id, $courseName,$courseProgram,$courseDuration,$coursePrice){
-        $sql = "UPDATE `Course` SET `Name`=$courseName,`Program`=$courseProgram,`Duration`=$courseDuration,`Price`='$coursePrice' WHERE `CourseID`='$id'";
+        $sql = "UPDATE Course SET Name='$courseName',Program='$courseProgram',Duration='$courseDuration',Price='$coursePrice' WHERE CourseID='$id'";
  
         return $this->db_query($sql);
     }
@@ -84,6 +85,11 @@ class Techbay extends db_connection{
         return $this->db_query($sql);
     }
 
+    public function showCourse($id){
+        $sql = "SELECT CourseID, Name, Program, Duration, Price FROM Course WHERE CourseID = '$id'";
+
+        return $this->db_query($sql);
+    }
 
 
 }
