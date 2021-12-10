@@ -111,7 +111,16 @@
                   <div class="card-body">
                     <img class="icons" src="images/student_icon.png" alt="student">
                     <p class="head">TOTAL STUDENTS</p>
-                    <p class="figure">12</p>
+                    <p class="figure">
+                      <?php
+                        require_once (dirname(__FILE__)).'../controller/controller.php';
+
+                        // $sum = s_Count();
+                        // echo "$sum";
+
+                        echo s_Count();
+                      ?>
+                    </p>
                   </div>
                 </div>
               </div>

@@ -117,6 +117,17 @@
               </thead>
               
               <tbody>
+              <?php
+                    require_once (dirname(__FILE__)).'../controller/controller.php';
+
+                    $instructors = getInstructors();
+
+                    foreach($instructors as $key => $value){
+                  ?>
+                         <?= "<tr> <th>" . $value['InstructorID'] . "</th> <td>" . $value['Instructorname'] ."</td> <td>". $value['Gender'] . "</td> <td>" . $value['Reputation'] . "</td> <td>" . $value['Courses_Taught'] . "</td> <td>" . $value['Name'] . "</td> <td>" . $value['Time'] . "</td>" ?>  
+              <?php
+                  }
+              ?>
               </tbody>
           </table> 
     </main>

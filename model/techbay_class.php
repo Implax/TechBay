@@ -1,7 +1,7 @@
 
 <?php
 
-require('../model/db_connection.php');
+require_once (dirname(__FILE__)).'/../model/db_connection.php';
 
 class Techbay extends db_connection{
     
@@ -27,7 +27,7 @@ class Techbay extends db_connection{
 
     //Count Functions
     public function countStudent(){
-        $sql = "SELECT COUNT(StudentID) AS NumberOfStudents FROM Student";
+        $sql = "SELECT COUNT(StudentID) FROM Student";
 
         return $this->db_query($sql);
     }
@@ -54,7 +54,7 @@ class Techbay extends db_connection{
 
     
     public function displayInstructors(){
-        $sql = "SELECT InstructorID, Instructorname, Gender, Reputation, Courses_Taught, Name, Time FROM Student";
+        $sql = "SELECT InstructorID, Instructorname, Gender, Reputation, Courses_Taught, Name, Time FROM Instructor";
 
         return $this->db_query($sql);
     }

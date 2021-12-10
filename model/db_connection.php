@@ -10,6 +10,7 @@
 
 	function db_connect(){
 		//connection
+		mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 		$this->db = mysqli_connect(servername,username,password,dbname);
 		//test the connection
 		if (mysqli_connect_errno()) {

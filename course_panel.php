@@ -121,6 +121,22 @@
                     </tr>
                   </thead>
                   <tbody>
+                  <?php
+                    require_once (dirname(__FILE__)).'../controller/controller.php';
+                    // start a session
+                    session_start();
+                    $courses = getCourses();
+
+                    foreach($courses as $key => $value){
+                  ?>
+                         <?= "<tr> <th>" . $value['CourseID'] . "</th> <td>" . $value['Name'] ."</td> <td>". $value['Program'] . "</td> <td>" . $value['Duration'] . "</td> <td>" . $value['Price'] . "</td>" ?>  
+                          <td>
+                            <a href="course_delete.php?id=<?= $value['CourseID'] ?>" class="btn btn-danger btn-custom"> Delete</a> 
+                            <a href="course_update.php?id=<?php $_SESSION['upId']= $value['CourseID'] ?>" class="btn btn-light btn-custom"> Update</a> 
+                          </td>
+              <?php
+                  }
+              ?>
                   </tbody>
               </table>    
     </main>

@@ -18,9 +18,8 @@ require_once (dirname(__FILE__)).'/../controller/controller.php';
         window.location.href='../admin.php';
         </script>";
   }
-
-
 ?>
+
 
 
 

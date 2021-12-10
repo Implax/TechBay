@@ -115,6 +115,17 @@
                     </tr>
                   </thead>
                   <tbody>
+                  <?php
+                    require_once (dirname(__FILE__)).'../controller/controller.php';
+
+                    $students = getStudents();
+
+                    foreach($students as $key => $value){
+                  ?>
+                         <?= "<tr> <th>" . $value['StudentID'] . "</th> <td>" . $value['S_name'] ."</td> <td>". $value['Email'] . "</td> <td>" . $value['Gender'] . "</td> <td>" . $value['Country'] . "</td> <td>" . $value['Enroll_Date'] . "</td>" ?>  
+              <?php
+                  }
+              ?>
                   </tbody>
               </table>
     </main>

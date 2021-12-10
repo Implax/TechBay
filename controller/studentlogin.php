@@ -10,7 +10,7 @@ require_once (dirname(__FILE__)).'/../controller/controller.php';
     if($login){
         echo "<script language='javascript'>;
          alert('Log In Successful!');
-        window.location.href='../student_panel.php';
+        window.location.href='../studentlanding.php';
         </script>";
   } else{
         echo "<script>;
