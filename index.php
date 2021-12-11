@@ -55,7 +55,7 @@
                 <div class="blurb col-lg-6 col-md-12">
                     <h1 class="blurb-header">Get The Best Free Online Tech Courses</h1>
                     <br>
-                    <p class="blurb-text">Access The Best Online Courses With Us. Innovative New Ways To Learn And Enjoy TEchnology.</p>
+                    <p class="blurb-text">Access The Best Online Courses With Us. Innovative New Ways To Learn And Enjoy New Tech Discoveries.</p>
                     <br>
                    <a href="signup.php"> <button type="button" class="btn btn-lg register-btn">Get Started</button></a>
                 </div>
