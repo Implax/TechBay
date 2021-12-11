@@ -5,7 +5,7 @@
     // define("password","64e4893a");
     // define("dbname","heroku_8fa64a8b89d5cb9");
 
-    define("servername","51.145.31.151");
+    define("servername","localhost");
     define("username","root");
     define("password","admin");
     define("dbname","techbay");
